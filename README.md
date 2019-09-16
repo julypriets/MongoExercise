@@ -1,7 +1,7 @@
-#Back con Node.js, Express y Mongo
+# Back con Node.js, Express y Mongo
 En este proyecto se encuentra un back que sigue un estilo arquitectónico Rest. El propósito del back es manejar información socieconómica de un grupo de países.
 
-##Instrucciones
+## Instrucciones
 Antes que nada, debe hacerse `npm install`. 
 
 Después, se corre el servidor con `node app.js`. 
