@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "e7d13604-d747-4bd0-a532-1da1eb79113c",
+		"name": "MongoExercise",
+		"description": "Colección que pone a prueba un back que sigue el estilo arquitectónico Rest. El propósito del back es manejar información socieconómica de un grupo de países.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries"
+					]
+				},
+				"description": "Obtiene la lista de todos los países."
+			},
+			"response": []
+		},
+		{
+			"name": "POST new country",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"country\": \"Sample\",\n    \"population\": 473829,\n    \"continent\": \"Europa\",\n    \"lifeExpectancy\": 80.3,\n    \"purchasingPower\": 6937.03\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/countries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries"
+					]
+				},
+				"description": "Crea un nuevo país con los valores recibidos en el cuerpo de la petición."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Albania",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/countries/Albania",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Albania"
+					]
+				},
+				"description": "Obtiene los detalles de Albania."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Albania",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"population\": 3600200,\n    \"continent\": \"Europa\",\n    \"lifeExpectancy\": 70.8,\n    \"purchasingPower\": 5937.58\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/countries/Albania",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Albania"
+					]
+				},
+				"description": "Actualiza los datos de Albania con los valores recibidos en el cuerpo de la petición."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Albania",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/countries/Albania",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Albania"
+					]
+				},
+				"description": "Borra el documento que representa a Albania."
+			},
+			"response": []
+		}
+	]
+}

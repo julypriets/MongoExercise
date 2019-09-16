@@ -6,4 +6,4 @@ Antes que nada, debe hacerse `npm install`.
 
 Después, se corre el servidor con `node app.js`. 
 
-Para probar el servidor, usar las colecciones de Postman "MongoExercise". 
+Para probar el servidor, usar las colecciones de Postman **MongoExercise**. 
